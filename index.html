@@ -6,13 +6,17 @@
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/example2.css" />
-	<link href='http://fonts.googleapis.com/css?family=Wire+One|Lily+Script+One|Federo|Codystar|Cardo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Wire+One|Lily+Script+One|Federo|Codystar|Cardo|Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link href='css/index.css' rel="stylesheet" type='text/css'>
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 		
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
@@ -22,7 +26,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var pepe = $.fn.fullpage({
-				slidesColor: ['#F9EDC7', '#84B2A1', '#307384','#F26E11', '#0A2435'],
+				slidesColor: ['white', '#84B2A1',  '#0A2435','#F26E11','#307384'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 				menu: '#menu'
 			});
@@ -35,8 +39,8 @@
 
 <ul id="menu">
 	<li data-menuanchor="firstPage"><a href="#firstPage">Profile</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Work</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Language</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Projects</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Skills</a></li>
 	<li data-menuanchor="4thpage"><a href="#4thpage">Contacts</a></li>
 </ul>
 
@@ -49,6 +53,9 @@
 	<div id="profile-text">
 		<h1 class="name-title">Wu Chihua</h1>
 		<p>Hi, I am a Taiwanese developer based in Tokyo. <br> I like to talk to both people and computer.<br> I play badminton & Catan.</p>
+	</div>
+	<div class="arrow-container">
+		<a class="arrow" href="#secondPage"><img src="img/arrow_down.png"></a>
 	</div>
 </div>
 <div class="section" id="section1">
@@ -94,6 +101,10 @@ Platform : Ubuntu (VirtualBox)</p>
 						</ul>
 					</div>
 				</div>
+			</div><!--container-->
+
+			<div class="arrow-container">
+				<a class="arrow" href="#3rdPage"><img src="img/arrow_down.png"></a>
 			</div>
 		</div>
 		
@@ -129,6 +140,9 @@ Platform : Ubuntu (VirtualBox)</p>
 				</div>
 			</div>
 		</div>
+		<div class="arrow-container">
+			<a class="arrow" href="#3rdPage"><img src="img/arrow_down.png"></a>
+		</div>
 	</div>
 	<!--
     <div class="slide">
@@ -138,32 +152,32 @@ Platform : Ubuntu (VirtualBox)</p>
 		</div>
 	</div>
 	-->
+
 </div>
 <div class="section" id="section2">
 	<div class="intro">
-	<!--
-		<div id="human-languages">
-			<div class="ch">
-
-				<p class="character">繁</p>
-			</div>
-			<div class="en">
-				<p class="character">A</p>
-			</div>
-			<div class="jp">
-				<p class="character">あ</p>
-			</div>
+		<div class="skill-container">
+			<div class="greyscale skill" id= "chinese"></div>
+			<div class="greyscale skill" id= "englsih"></div>
+			<div class="greyscale skill" id= "japanese"></div>
+			<div class="greyscale skill" id= "sketch"></div>
+			<div class="greyscale skill" id= "camera"></div>
+			<div class="greyscale skill" id= "badminton"></div>
+			<div class="greyscale skill" id= "catan"></div>
+			<div class="greyscale skill" id= "child"></div>
+			<img class="greyscale skill-pic" src="img/nihao.jpg">
+			<img class="skill-text" src="img/nihao_text.jpg">
+			<img class="greyscale skill-pic" src="img/mysterious.jpg">
+			<img class="greyscale skill-pic" src="img/japanese.jpg">
+			<img class="greyscale skill-pic" src="img/sketch.jpg">
+			<img class="greyscale skill-pic" src="img/camera.jpg">
+			<img class="greyscale skill-pic" src="img/badmintonChampion_crop.png">
+			<img class="greyscale skill-pic" src="img/catan.png">
+			<img class="greyscale skill-pic" src="img/child.jpg">
 		</div>
-		-->
-		<h1 class="codystar">Languages</h1>
-		<p style="color:white;"> Chinese: native speaker<br> English : bussiness level<br> Japanese: Conversation level</p>
-		<!--
-		<div id="program-languages">
-			<div>
-				<p class="character">HTML5</p>
-			</div>
-		</div>
-		-->
+	</div>
+	<div class="arrow-container">
+		<a class="arrow" href="#4thpage"><img src="img/arrow_down.png"></a>
 	</div>
 </div>
 
@@ -172,9 +186,10 @@ Platform : Ubuntu (VirtualBox)</p>
 		<h1 class="codystar">Contact Me</h1>
 		<div id="social-links">
 			
-			<a class="social-links-item" href="mailto:ms.ggwu@gmail.com" target="_blank"><img src="img/email.png"></a>
-			<a class="social-links-item" href="http://www.linkedin.com/pub/chihua-wu/71/925/50a" target="_blank"><img src="img/linkedin.png"></a>
-			<a class="social-links-item" href="http://www.pinterest.com/wugigi/" target="_blank"><img src="img/pinterest.png"></a>
+			<a class="social-links-item" href="mailto:ms.ggwu@gmail.com" target="_blank"><img src="img/social/email.png"></a>
+			<a class="social-links-item" href="http://www.linkedin.com/pub/chihua-wu/71/925/50a" target="_blank"><img src="img/social/linkedin.png"></a>
+			<a class="social-links-item" href="http://instagram.com/ggwu" target="_blank"><img src="img/social/instagram.png"></a>
+			<a class="social-links-item" href="http://www.pinterest.com/wugigi/" target="_blank"><img src="img/social/pinterest.png"></a>
 		</div>
 	</div>
 </div>
@@ -183,6 +198,20 @@ Platform : Ubuntu (VirtualBox)</p>
 </html>
 
 <script type="text/javascript">
+$(function(){
+	$('.skill-container > img').hover(
+		function(){
+			console.log(this.src);
+			$(this).css('filter','none')
+			.css('-webkit-filter','grayscale(0%)');
+
+		},
+		function(){
+			$(this).css('filter','gray')
+			.css('-webkit-filter','grayscale(100%)')
+			.css('filter','url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")');
+		});
+});
 $(function(){
 var flg = 1;
 	setInterval(function(){
@@ -217,5 +246,16 @@ $('[id^=project-image]').each(function(){
 	.css('-webkit-transition', 'all .6s ease')
 	.css('-webkit-backface-visibility','hidden');
 	$(this).parent().siblings('.project-content').css('height','300px');
+	$(this).hover(
+		function(){
+			$(this).css('filter','none')
+			.css('-webkit-filter','grayscale(0%)');
+		},
+		function(){
+			$(this).css('filter','gray')
+			.css('-webkit-filter','grayscale(100%)')
+			.css('filter','url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")');
+		}
+	);
 });
 </script>

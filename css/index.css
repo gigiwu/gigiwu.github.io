@@ -4,24 +4,26 @@
 	font-size: 100px;
 }
 
+#section0,
+#section1{
+	background: url('../img/stripe.png');
+}
+}
+
 #menu li a
 {
-	font-family: 'Lily Script One', cursive;
+	font-family: 'Open Sans', cursive;
+	font-weight: 300;
 }
 
 #section0 p,
 #section2 p
 {
-	font-family: 'Cardo', sans-serif;	
+	font-family: 'Open Sans', sans-serif;	
 	font-size: 1.5em;
 }
 
-.project-content p
-{
-	font-family: 'Cardo', sans-serif;	
-	text-align: left;
-	font-size: 2.0 em;
-}
+
 
 .codystar
 {
@@ -101,11 +103,12 @@ a img {
 .social-links-item img{
 	opacity: 0.3;
 	transition: opacity 300ms ease-out 0s;
+	width: 70px;
+	margin-left: 10px;
 }
 .social-links-item img:hover {
 	opacity: 1;
-	 -webkit-filter: invert(100%);  
-	 -moz-filter: invert(100%); 
+
 	transition: opacity 300ms ease-out 0s;
 }
 .container
@@ -133,7 +136,7 @@ a img {
 .project-title
 {
 	width:100%;
-	height:20px;
+	height:35px;
 	background:#333 repeat;
 	padding: 5px;
 }
@@ -166,16 +169,19 @@ div[id^='project-image-']:hover {
 
 .project-title h3
 {
-	font-family: 'Federo', cursive;
-	font-size: 15px;
+	font-family: 'Open Sans', cursive;
+	font-size: 20px;
 	color: white;
 }
 
 .project-content p
 {
-	font-family: 'Cardo', cursive;
-	font-size: 10pt;
 	margin: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;	
+	text-align: left;
+	font-size: 3.0 em;
+
 }
 
 .project-content img
@@ -189,7 +195,8 @@ div[id^='project-image-']:hover {
 }
 
 
-.project-content img:hover {
+.project-content img:hover
+{
     filter: none;
     -webkit-filter: grayscale(0%);
 }
@@ -197,4 +204,51 @@ div[id^='project-image-']:hover {
 .human-language
 {
 	display: inline-block;
+}
+
+.video-container{
+	width:240px;
+    height:240px;
+    overflow:hidden;
+    border-radius: 120px 120px 120px 120px;	
+}
+
+.arrow-container
+{
+	position: absolute;
+	margin-left: 46%;
+}
+.arrow img
+{
+	opacity: 0.3;
+	transition: opacity 300ms ease-out 0s;
+}
+.arrow img:hover {
+	opacity: 1;
+	transition: opacity 300ms ease-out 0s;
+}
+
+.skill-container {
+	width:80%;
+	margin: auto;
+}
+.skill-container img{
+	width:20%;
+	margin:0px,0px,0px,0px;
+}
+
+.greyscale{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+, IE10 */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+
+.skill-pic{
+	display: inline;
+}
+
+.skill-text{
+	display: none;
 }
