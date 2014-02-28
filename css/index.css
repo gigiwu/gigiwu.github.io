@@ -9,11 +9,18 @@
 	font-family: 'Lily Script One', cursive;
 }
 
-.intro p,
-#section0 p
+#section0 p,
+#section2 p
 {
 	font-family: 'Cardo', sans-serif;	
 	font-size: 1.5em;
+}
+
+.project-content p
+{
+	font-family: 'Cardo', sans-serif;	
+	text-align: left;
+	font-size: 2.0 em;
 }
 
 .codystar
